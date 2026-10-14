@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دعوت‌نامه‌ی ما</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap');
+:root{--cream:#fff8ef;--green:#34594a;--gold:#c69a55;--rose:#b96f75}
+*{box-sizing:border-box}body{margin:0;font-family:Vazirmatn,Tahoma,sans-serif;background:radial-gradient(circle at top,#f4e6d8,var(--cream) 55%);color:#34483d;text-align:center;min-height:100vh}
+main{max-width:520px;margin:auto;padding:24px 18px 40px}.eyebrow{letter-spacing:2px;color:var(--rose);font-size:12px}.frame{border:1px solid #d9bd8e;border-radius:180px 180px 22px 22px;padding:28px 20px 26px;margin:18px auto;background:rgba(255,255,255,.62);box-shadow:0 18px 50px #75532a14;position:relative;overflow:hidden}.leaf{font-size:34px;color:var(--green);margin:4px}.names{font-size:clamp(28px,8vw,42px);font-weight:800;color:var(--green);margin:18px 0 8px}.amp{font-family:Georgia,serif;color:var(--gold);font-size:28px}.rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:22px 20px}.message{line-height:2;font-size:15px}.date{font-weight:700;color:var(--rose);font-size:18px}.details{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0}.detail{border:1px solid #e4d2b2;border-radius:14px;padding:12px 8px;background:#fffaf4}.detail small{display:block;color:#927c5d;margin-bottom:5px}.btn{display:inline-block;border:0;border-radius:999px;background:var(--green);color:white;padding:12px 20px;text-decoration:none;font:500 14px Vazirmatn,Tahoma,sans-serif;margin:5px;cursor:pointer}.btn.secondary{background:#f0e2ce;color:var(--green)}.envelope{margin:18px auto 12px;width:180px;height:120px;position:relative;cursor:pointer;perspective:700px}.envbody{position:absolute;inset:0;background:#d9b47a;border-radius:8px;box-shadow:0 8px 18px #72502c26}.flap{position:absolute;left:0;right:0;top:0;margin:auto;width:0;height:0;border-left:90px solid transparent;border-right:90px solid transparent;border-top:72px solid #c69a55;transform-origin:top;transition:transform .8s;z-index:2}.letter{position:absolute;left:14px;right:14px;bottom:8px;height:78px;background:#fff8ef;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:13px;transition:transform .8s;z-index:1}.envelope.open .flap{transform:rotateX(180deg)}.envelope.open .letter{transform:translateY(-48px)}#invitation{display:none;animation:rise .8s ease both}#invitation.show{display:block}@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}footer{font-size:11px;color:#9c8a72;margin-top:22px}.spark{color:var(--gold)}
+</style></head>
+<body><main>
+<div class="eyebrow">یک روز زیبا، یک خاطره‌ی ماندگار</div>
+<div class="envelope" id="envelope" role="button" tabindex="0" aria-label="باز کردن دعوت‌نامه"><div class="envbody"></div><div class="letter">با عشق، منتظر دیدارتان هستیم</div><div class="flap"></div></div>
+<div style="font-size:13px;color:#8c785e">برای باز کردن دعوت‌نامه، روی پاکت بزنید</div>
+<section id="invitation">
+<div class="frame"><div class="leaf">❧ ✿ ❧</div><div class="eyebrow">به نام عشق و مهربانی</div><div class="names">نام عروس <span class="amp">&</span><br>نام داماد</div><div class="rule"></div><div class="message">با شادیِ دل و به امید آغاز فصلی تازه،<br>از شما دعوت می‌کنیم در جشن پیوندمان کنار ما باشید.</div><p class="date">جمعه، ۲۰ آذر ۱۴۰۵</p><div class="details"><div class="detail"><small>ساعت مراسم</small><strong>۱۹:۰۰</strong></div><div class="detail"><small>محل برگزاری</small><strong>نام تالار، شهر</strong></div></div><div class="rule"></div><div class="message">حضور شما، زیبایی این شب را دوچندان می‌کند.</div><div class="spark">✦ ✦ ✦</div></div>
+<a class="btn" href="https://maps.google.com" target="_blank" rel="noopener">مشاهده نقشه</a>
+<a class="btn secondary" href="https://wa.me/?text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%AD%D8%B6%D9%88%D8%B1%D9%85%20%D8%B1%D8%A7%20%D8%AF%D8%B1%20%D9%85%D8%B1%D8%A7%D8%B3%D9%85%20%D8%AA%D8%A3%DB%8C%DB%8C%D8%AF%20%D9%85%DB%8C%E2%80%8C%DA%A9%D9%86%D9%85." target="_blank" rel="noopener">تأیید حضور در واتساپ</a>
+</section><footer>این یک نمونه‌ی نمایشی است؛ نام‌ها، تاریخ، ساعت و نشانی باید پیش از تحویل جایگزین شوند.</footer>
+</main><script>
+const env=document.getElementById('envelope'),inv=document.getElementById('invitation');function openInvite(){env.classList.add('open');setTimeout(()=>inv.classList.add('show'),380)}env.addEventListener('click',openInvite);env.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openInvite()}});
+</script></body></html>
